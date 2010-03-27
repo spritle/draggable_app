@@ -1,0 +1,1545 @@
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (109.4ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (140.6ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateTasks (20100323060706)
+  [4;35;1mSQL (62.5ms)[0m   [0mCREATE TABLE `tasks` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (46.9ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100323060706')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW FIELDS FROM `tasks`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mdescribe `tasks`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `tasks`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-03-23 11:39:03) [GET]
+  [4;36;1mTask Load (0.0ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+
+ActionView::MissingTemplate (Missing layout layouts/.erb in view path app/views):
+  app/controllers/tasks_controller.rb:8:in `index'
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-03-23 11:39:07) [GET]
+  [4;35;1mTask Load (0.0ms)[0m   [0mSELECT * FROM `tasks` [0m
+
+ActionView::MissingTemplate (Missing layout layouts/.erb in view path app/views):
+  app/controllers/tasks_controller.rb:8:in `index'
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-03-23 11:39:16) [GET]
+  [4;36;1mTask Load (0.0ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering tasks/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/tasks]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-23 11:39:16) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery-1.3.2.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-23 11:39:16) [GET]
+
+ActionController::RoutingError (No route matches "/styles.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-23 11:39:16) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery-ui-1.7.2.custom.min.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-23 11:39:16) [GET]
+
+ActionController::RoutingError (No route matches "/styles.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-03-23 11:40:06) [GET]
+  [4;35;1mTask Load (0.0ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering tasks/index
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/tasks]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-23 11:40:06) [GET]
+
+ActionController::RoutingError (No route matches "/jquery.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-23 11:40:06) [GET]
+
+ActionController::RoutingError (No route matches "/jquery-ui-1.7.2.custom.min.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-23 11:40:06) [GET]
+
+ActionController::RoutingError (No route matches "/styles.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-03-23 11:41:09) [GET]
+  [4;36;1mTask Load (0.0ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering tasks/index
+Completed in 219ms (View: 203, DB: 0) | 200 OK [http://localhost/tasks]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-23 11:41:10) [GET]
+
+ActionController::RoutingError (No route matches "/styles.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-23 11:41:10) [GET]
+
+ActionController::RoutingError (No route matches "/styles.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-03-23 11:41:11) [GET]
+  [4;35;1mTask Load (0.0ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering tasks/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/tasks]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-23 11:41:11) [GET]
+
+ActionController::RoutingError (No route matches "/styles.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-23 11:41:11) [GET]
+
+ActionController::RoutingError (No route matches "/styles.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-03-23 11:41:38) [GET]
+  [4;36;1mTask Load (0.0ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering tasks/index
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/tasks]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-23 11:41:39) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/collapse.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-03-23 11:42:16) [GET]
+  [4;35;1mTask Load (0.0ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering tasks/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/tasks]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-23 11:42:26) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/collapse.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-03-23 11:43:30) [GET]
+  [4;36;1mTask Load (0.0ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering tasks/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/tasks]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-23 11:43:30) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/collapse.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-03-23 11:43:32) [GET]
+  [4;35;1mTask Load (0.0ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering tasks/index
+Completed in 62ms (View: 16, DB: 0) | 200 OK [http://localhost/tasks]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-23 11:43:34) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/collapse.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-03-23 11:44:26) [GET]
+  [4;36;1mTask Load (0.0ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering tasks/index
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/tasks]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-23 11:44:27) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/collapse.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-03-23 11:45:18) [GET]
+  [4;35;1mTask Load (0.0ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering tasks/index
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/tasks]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-03-23 11:45:39) [GET]
+  [4;36;1mTask Load (0.0ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering tasks/index
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/tasks]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-03-23 11:49:26) [GET]
+  [4;35;1mTask Load (0.0ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering tasks/index
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/tasks]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasksController#show (for 127.0.0.1 at 2010-03-23 11:49:32) [GET]
+  Parameters: {"id"=>"create", "SortOrder: column1"=>"item2,item3", "_"=>"1269325172228", "column2"=>"item4,item5,item1"}
+  [4;36;1mTask Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `tasks`[0m
+  [4;35;1mTask Load (0.0ms)[0m   [0mSELECT * FROM `tasks` WHERE (`tasks`.`id` = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Task with ID=create):
+  app/controllers/tasks_controller.rb:17:in `show'
+
+Rendered rescues/_trace (171.9ms)
+Rendered rescues/_request_and_response (15.6ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-03-23 11:51:30) [GET]
+  [4;36;1mTask Load (0.0ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering tasks/index
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/tasks]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasksController#show (for 127.0.0.1 at 2010-03-23 11:51:37) [GET]
+  Parameters: {"id"=>"create", "SortOrder: column1"=>"item1,item2,item3,item5", "_"=>"1269325297723", "column2"=>"item4"}
+  [4;35;1mTask Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+  [4;36;1mTask Load (0.0ms)[0m   [0;1mSELECT * FROM `tasks` WHERE (`tasks`.`id` = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Task with ID=create):
+  app/controllers/tasks_controller.rb:17:in `show'
+
+Rendered rescues/_trace (62.5ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-03-23 11:51:57) [GET]
+  [4;36;1mTask Load (0.0ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering tasks/index
+Completed in 62ms (View: 62, DB: 0) | 200 OK [http://localhost/tasks]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasksController#show (for 127.0.0.1 at 2010-03-23 11:52:03) [GET]
+  Parameters: {"id"=>"create", "SortOrder: column1"=>"item1,item5,item2,item3", "_"=>"1269325323106", "column2"=>"item4"}
+  [4;35;1mTask Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+  [4;36;1mTask Load (0.0ms)[0m   [0;1mSELECT * FROM `tasks` WHERE (`tasks`.`id` = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Task with ID=create):
+  app/controllers/tasks_controller.rb:17:in `show'
+
+Rendered rescues/_trace (46.9ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateTasks (20100323060706)
+Migrating to CreateWidgetOrders (20100323062316)
+  [4;36;1mSQL (78.1ms)[0m   [0;1mCREATE TABLE `widget_orders` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `column1` varchar(255), `column2` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (171.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100323062316')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+  [4;36;1mSQL (15.6ms)[0m   [0;1mdescribe `tasks`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `tasks`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW FIELDS FROM `widget_orders`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mdescribe `widget_orders`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `widget_orders`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-03-23 11:56:59) [GET]
+  [4;35;1mTask Load (0.0ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering tasks/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/tasks]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasksController#show (for 127.0.0.1 at 2010-03-23 11:57:07) [GET]
+  Parameters: {"id"=>"create", "SortOrder: column1"=>"item1,item3", "_"=>"1269325627697", "column2"=>"item4,item2,item5"}
+  [4;36;1mTask Columns (15.6ms)[0m   [0;1mSHOW FIELDS FROM `tasks`[0m
+  [4;35;1mTask Load (0.0ms)[0m   [0mSELECT * FROM `tasks` WHERE (`tasks`.`id` = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Task with ID=create):
+  app/controllers/tasks_controller.rb:17:in `show'
+
+Rendered rescues/_trace (109.4ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasksController#show (for 127.0.0.1 at 2010-03-23 11:57:20) [GET]
+  Parameters: {"id"=>"create", "SortOrder: column1"=>"item1,item3", "_"=>"1269325640012", "column2"=>"item4,item2,item5"}
+  [4;36;1mTask Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `tasks`[0m
+  [4;35;1mTask Load (0.0ms)[0m   [0mSELECT * FROM `tasks` WHERE (`tasks`.`id` = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Task with ID=create):
+  app/controllers/tasks_controller.rb:17:in `show'
+
+Rendered rescues/_trace (93.8ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasksController#show (for 127.0.0.1 at 2010-03-23 11:57:22) [GET]
+  Parameters: {"id"=>"create", "SortOrder: column1"=>"item1,item2,item3", "_"=>"1269325642873", "column2"=>"item4,item5"}
+  [4;36;1mTask Columns (15.6ms)[0m   [0;1mSHOW FIELDS FROM `tasks`[0m
+  [4;35;1mTask Load (0.0ms)[0m   [0mSELECT * FROM `tasks` WHERE (`tasks`.`id` = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Task with ID=create):
+  app/controllers/tasks_controller.rb:17:in `show'
+
+Rendered rescues/_trace (46.9ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasksController#show (for 127.0.0.1 at 2010-03-23 11:57:27) [GET]
+  Parameters: {"id"=>"create", "SortOrder: column1"=>"item1,item2,item3", "_"=>"1269325647697", "column2"=>"item4,item5"}
+  [4;36;1mTask Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `tasks`[0m
+  [4;35;1mTask Load (0.0ms)[0m   [0mSELECT * FROM `tasks` WHERE (`tasks`.`id` = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Task with ID=create):
+  app/controllers/tasks_controller.rb:17:in `show'
+
+Rendered rescues/_trace (46.9ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasksController#show (for 127.0.0.1 at 2010-03-23 11:58:51) [GET]
+  Parameters: {"id"=>"create", "SortOrder: column1"=>"item1,item2,item4,item3", "_"=>"1269325731128", "column2"=>"item5"}
+  [4;36;1mTask Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `tasks`[0m
+  [4;35;1mTask Load (0.0ms)[0m   [0mSELECT * FROM `tasks` WHERE (`tasks`.`id` = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Task with ID=create):
+  app/controllers/tasks_controller.rb:17:in `show'
+
+Rendered rescues/_trace (46.9ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasksController#show (for 127.0.0.1 at 2010-03-23 11:59:36) [GET]
+  Parameters: {"id"=>"create", "SortOrder: column1"=>"item1,item4,item3", "_"=>"1269325776695", "column2"=>"item2,item5"}
+  [4;36;1mTask Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `tasks`[0m
+  [4;35;1mTask Load (0.0ms)[0m   [0mSELECT * FROM `tasks` WHERE (`tasks`.`id` = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Task with ID=create):
+  app/controllers/tasks_controller.rb:17:in `show'
+
+Rendered rescues/_trace (46.9ms)
+Rendered rescues/_request_and_response (15.6ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-03-23 12:00:36) [GET]
+  [4;36;1mTask Load (0.0ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering tasks/index
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/tasks]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasksController#show (for 127.0.0.1 at 2010-03-23 12:00:40) [GET]
+  Parameters: {"id"=>"create", "SortOrder: column1"=>"item1,item5,item2,item3", "_"=>"1269325840840", "column2"=>"item4"}
+  [4;35;1mTask Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+  [4;36;1mTask Load (0.0ms)[0m   [0;1mSELECT * FROM `tasks` WHERE (`tasks`.`id` = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Task with ID=create):
+  app/controllers/tasks_controller.rb:17:in `show'
+
+Rendered rescues/_trace (109.4ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasksController#show (for 127.0.0.1 at 2010-03-23 12:00:43) [GET]
+  Parameters: {"id"=>"create", "SortOrder: column1"=>"item1,item5,item2,item3", "_"=>"1269325843926", "column2"=>"item4"}
+  [4;35;1mTask Columns (15.6ms)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+  [4;36;1mTask Load (0.0ms)[0m   [0;1mSELECT * FROM `tasks` WHERE (`tasks`.`id` = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Task with ID=create):
+  app/controllers/tasks_controller.rb:17:in `show'
+
+Rendered rescues/_trace (62.5ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasksController#show (for 127.0.0.1 at 2010-03-23 12:00:46) [GET]
+  Parameters: {"id"=>"create", "SortOrder: column1"=>"item1,item5,item2,item3", "_"=>"1269325846575", "column2"=>"item4"}
+  [4;35;1mTask Columns (15.6ms)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+  [4;36;1mTask Load (0.0ms)[0m   [0;1mSELECT * FROM `tasks` WHERE (`tasks`.`id` = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Task with ID=create):
+  app/controllers/tasks_controller.rb:17:in `show'
+
+Rendered rescues/_trace (93.8ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasksController#show (for 127.0.0.1 at 2010-03-23 12:01:20) [GET]
+  Parameters: {"id"=>"create", "SortOrder: column1"=>"item1,item2,item3", "_"=>"1269325880559", "column2"=>"item4,item5"}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  app/controllers/tasks_controller.rb:19:in `show'
+
+Rendered rescues/_trace (46.9ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasksController#show (for 127.0.0.1 at 2010-03-23 12:02:43) [GET]
+  Parameters: {"id"=>"create", "SortOrder: column1"=>"item1,item3", "_"=>"1269325963487", "column2"=>"item4,item2,item5"}
+Rendering tasks/show
+
+ActionView::TemplateError (undefined method `name' for nil:NilClass) on line #3 of app/views/tasks/show.html.erb:
+1: <p>
+2:   <b>Name:</b>
+3:   <%=h @task.name %>
+4: </p>
+5: 
+6: 
+
+    app/views/tasks/show.html.erb:3
+    app/controllers/tasks_controller.rb:20:in `show'
+
+Rendered rescues/_trace (62.5ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasksController#show (for 127.0.0.1 at 2010-03-23 12:04:53) [GET]
+  Parameters: {"id"=>"create", "SortOrder: column1"=>"item1,item3", "_"=>"1269326093036", "column2"=>"item4,item2,item5"}
+  [4;35;1mWidgetOrder Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `widget_orders`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mWidgetOrder Create (0.0ms)[0m   [0mINSERT INTO `widget_orders` (`updated_at`, `column1`, `column2`, `created_at`) VALUES('2010-03-23 06:34:53', 'item1,item3', 'item4,item2,item5', '2010-03-23 06:34:53')[0m
+  [4;36;1mSQL (15.6ms)[0m   [0;1mCOMMIT[0m
+
+ActionView::MissingTemplate (Missing template tasks/show.erb in view path app/views):
+  app/controllers/tasks_controller.rb:21:in `show'
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasksController#show (for 127.0.0.1 at 2010-03-23 12:04:56) [GET]
+  Parameters: {"id"=>"create", "SortOrder: column1"=>"item1,item3", "_"=>"1269326096677", "column2"=>"item4,item2,item5"}
+  [4;35;1mWidgetOrder Columns (15.6ms)[0m   [0mSHOW FIELDS FROM `widget_orders`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mWidgetOrder Create (0.0ms)[0m   [0mINSERT INTO `widget_orders` (`updated_at`, `column1`, `column2`, `created_at`) VALUES('2010-03-23 06:34:56', 'item1,item3', 'item4,item2,item5', '2010-03-23 06:34:56')[0m
+  [4;36;1mSQL (31.2ms)[0m   [0;1mCOMMIT[0m
+
+ActionView::MissingTemplate (Missing template tasks/show.erb in view path app/views):
+  app/controllers/tasks_controller.rb:21:in `show'
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasksController#show (for 127.0.0.1 at 2010-03-23 12:04:58) [GET]
+  Parameters: {"id"=>"create", "SortOrder: column1"=>"item1,item3", "_"=>"1269326098532", "column2"=>"item4,item2,item5"}
+  [4;35;1mWidgetOrder Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `widget_orders`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mWidgetOrder Create (15.6ms)[0m   [0mINSERT INTO `widget_orders` (`updated_at`, `column1`, `column2`, `created_at`) VALUES('2010-03-23 06:34:58', 'item1,item3', 'item4,item2,item5', '2010-03-23 06:34:58')[0m
+  [4;36;1mSQL (15.6ms)[0m   [0;1mCOMMIT[0m
+
+ActionView::MissingTemplate (Missing template tasks/show.erb in view path app/views):
+  app/controllers/tasks_controller.rb:21:in `show'
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasksController#show (for 127.0.0.1 at 2010-03-23 12:05:08) [GET]
+  Parameters: {"id"=>"create", "SortOrder: column1"=>"item1,item2,item3", "_"=>"1269326108037", "column2"=>"item4,item5"}
+  [4;35;1mWidgetOrder Columns (15.6ms)[0m   [0mSHOW FIELDS FROM `widget_orders`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mWidgetOrder Create (0.0ms)[0m   [0mINSERT INTO `widget_orders` (`updated_at`, `column1`, `column2`, `created_at`) VALUES('2010-03-23 06:35:08', 'item1,item2,item3', 'item4,item5', '2010-03-23 06:35:08')[0m
+  [4;36;1mSQL (15.6ms)[0m   [0;1mCOMMIT[0m
+
+ActionView::MissingTemplate (Missing template tasks/show.erb in view path app/views):
+  app/controllers/tasks_controller.rb:21:in `show'
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-03-23 12:07:47) [GET]
+  [4;35;1mTask Load (0.0ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering tasks/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/tasks]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasksController#show (for 127.0.0.1 at 2010-03-23 12:07:53) [GET]
+  Parameters: {"id"=>"create", "SortOrder: column1"=>"item1,item3", "_"=>"1269326273056", "column2"=>"item2,item4,item5"}
+  [4;36;1mWidgetOrder Load (0.0ms)[0m   [0;1mSELECT * FROM `widget_orders` LIMIT 1[0m
+  [4;35;1mWidgetOrder Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `widget_orders`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mWidgetOrder Create (0.0ms)[0m   [0mINSERT INTO `widget_orders` (`updated_at`, `column1`, `column2`, `created_at`) VALUES('2010-03-23 06:37:53', 'item1,item3', 'item2,item4,item5', '2010-03-23 06:37:53')[0m
+  [4;36;1mSQL (62.5ms)[0m   [0;1mCOMMIT[0m
+
+ActionView::MissingTemplate (Missing template tasks/show.erb in view path app/views):
+  app/controllers/tasks_controller.rb:29:in `show'
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasksController#show (for 127.0.0.1 at 2010-03-23 12:08:01) [GET]
+  Parameters: {"id"=>"create", "SortOrder: column1"=>"item1,item4,item3", "_"=>"1269326281951", "column2"=>"item2,item5"}
+  [4;35;1mWidgetOrder Load (0.0ms)[0m   [0mSELECT * FROM `widget_orders` LIMIT 1[0m
+  [4;36;1mWidgetOrder Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `widget_orders`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mWidgetOrder Update (0.0ms)[0m   [0;1mUPDATE `widget_orders` SET `column2` = 'item2,item5', `column1` = 'item1,item4,item3', `updated_at` = '2010-03-23 06:38:01' WHERE `id` = 5[0m
+  [4;35;1mSQL (31.2ms)[0m   [0mCOMMIT[0m
+
+ActionView::MissingTemplate (Missing template tasks/show.erb in view path app/views):
+  app/controllers/tasks_controller.rb:29:in `show'
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-03-23 12:13:13) [GET]
+  [4;36;1mWidgetOrder Load (0.0ms)[0m   [0;1mSELECT * FROM `widget_orders` LIMIT 1[0m
+  [4;35;1mWidgetOrder Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `widget_orders`[0m
+Rendering tasks/index
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/tasks]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasksController#show (for 127.0.0.1 at 2010-03-23 12:13:23) [GET]
+  Parameters: {"id"=>"create", "SortOrder: column1"=>"item1,item3", "_"=>"1269326603408", "column2"=>"item4,item2,item5"}
+  [4;36;1mWidgetOrder Load (0.0ms)[0m   [0;1mSELECT * FROM `widget_orders` LIMIT 1[0m
+  [4;35;1mWidgetOrder Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `widget_orders`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mWidgetOrder Update (0.0ms)[0m   [0mUPDATE `widget_orders` SET `column2` = 'item4,item2,item5', `column1` = 'item1,item3', `updated_at` = '2010-03-23 06:43:23' WHERE `id` = 5[0m
+  [4;36;1mSQL (15.6ms)[0m   [0;1mCOMMIT[0m
+
+ActionView::MissingTemplate (Missing template tasks/show.erb in view path app/views):
+  app/controllers/tasks_controller.rb:30:in `show'
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-03-23 12:13:26) [GET]
+  [4;35;1mWidgetOrder Load (0.0ms)[0m   [0mSELECT * FROM `widget_orders` LIMIT 1[0m
+  [4;36;1mWidgetOrder Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `widget_orders`[0m
+Rendering tasks/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/tasks]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (47.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (156.0ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (188.0ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateTasks (20100323060706)
+  [4;35;1mSQL (62.0ms)[0m   [0mCREATE TABLE `tasks` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (16.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100323060706')[0m
+Migrating to CreateWidgetOrders (20100323062316)
+  [4;35;1mSQL (125.0ms)[0m   [0mCREATE TABLE `widget_orders` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `column1` varchar(255), `column2` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (47.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100323062316')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW FIELDS FROM `tasks`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mdescribe `tasks`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `tasks`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW FIELDS FROM `widget_orders`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mdescribe `widget_orders`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `widget_orders`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-03-23 12:19:37) [GET]
+  [4;36;1mWidgetOrder Load (16.0ms)[0m   [0;1mSELECT * FROM `widget_orders` LIMIT 1[0m
+  [4;35;1mWidgetOrder Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `widget_orders`[0m
+Rendering tasks/index
+Completed in 78ms (View: 62, DB: 16) | 200 OK [http://localhost/tasks]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasksController#show (for 127.0.0.1 at 2010-03-23 12:19:40) [GET]
+  Parameters: {"id"=>"create", "SortOrder: column1"=>"item1,item2,item3,item5", "_"=>"1269326980709", "column2"=>"item4"}
+  [4;36;1mWidgetOrder Load (0.0ms)[0m   [0;1mSELECT * FROM `widget_orders` LIMIT 1[0m
+  [4;35;1mWidgetOrder Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `widget_orders`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mWidgetOrder Update (0.0ms)[0m   [0mUPDATE `widget_orders` SET `column2` = 'item4', `column1` = 'item1,item2,item3,item5', `updated_at` = '2010-03-23 06:49:40' WHERE `id` = 1[0m
+  [4;36;1mSQL (32.0ms)[0m   [0;1mCOMMIT[0m
+
+ActionView::MissingTemplate (Missing template tasks/show.erb in view path app/views):
+  app/controllers/tasks_controller.rb:30:in `show'
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-03-23 12:19:46) [GET]
+  [4;35;1mWidgetOrder Load (0.0ms)[0m   [0mSELECT * FROM `widget_orders` LIMIT 1[0m
+  [4;36;1mWidgetOrder Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `widget_orders`[0m
+Rendering tasks/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/tasks]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasksController#show (for 127.0.0.1 at 2010-03-23 12:19:53) [GET]
+  Parameters: {"id"=>"create", "SortOrder: column1"=>"item1,item3,item5", "_"=>"1269326993043", "column2"=>"item4,item2"}
+  [4;35;1mWidgetOrder Load (0.0ms)[0m   [0mSELECT * FROM `widget_orders` LIMIT 1[0m
+  [4;36;1mWidgetOrder Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `widget_orders`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mWidgetOrder Update (0.0ms)[0m   [0;1mUPDATE `widget_orders` SET `column2` = 'item4,item2', `column1` = 'item1,item3,item5', `updated_at` = '2010-03-23 06:49:53' WHERE `id` = 1[0m
+  [4;35;1mSQL (78.0ms)[0m   [0mCOMMIT[0m
+
+ActionView::MissingTemplate (Missing template tasks/show.erb in view path app/views):
+  app/controllers/tasks_controller.rb:30:in `show'
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-03-23 12:19:53) [GET]
+  [4;36;1mWidgetOrder Load (0.0ms)[0m   [0;1mSELECT * FROM `widget_orders` LIMIT 1[0m
+  [4;35;1mWidgetOrder Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `widget_orders`[0m
+Rendering tasks/index
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://localhost/tasks]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasksController#show (for 127.0.0.1 at 2010-03-23 12:20:02) [GET]
+  Parameters: {"id"=>"create", "SortOrder: column1"=>"item1,item3,item2,item5", "_"=>"1269327002315", "column2"=>"item4"}
+  [4;36;1mWidgetOrder Load (0.0ms)[0m   [0;1mSELECT * FROM `widget_orders` LIMIT 1[0m
+  [4;35;1mWidgetOrder Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `widget_orders`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mWidgetOrder Update (0.0ms)[0m   [0mUPDATE `widget_orders` SET `column2` = 'item4', `column1` = 'item1,item3,item2,item5', `updated_at` = '2010-03-23 06:50:02' WHERE `id` = 1[0m
+  [4;36;1mSQL (31.0ms)[0m   [0;1mCOMMIT[0m
+
+ActionView::MissingTemplate (Missing template tasks/show.erb in view path app/views):
+  app/controllers/tasks_controller.rb:30:in `show'
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasksController#show (for 127.0.0.1 at 2010-03-23 12:20:04) [GET]
+  Parameters: {"id"=>"create", "SortOrder: column1"=>"item1,item3,item2", "_"=>"1269327004386", "column2"=>"item5,item4"}
+  [4;35;1mWidgetOrder Load (0.0ms)[0m   [0mSELECT * FROM `widget_orders` LIMIT 1[0m
+  [4;36;1mWidgetOrder Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `widget_orders`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mWidgetOrder Update (0.0ms)[0m   [0;1mUPDATE `widget_orders` SET `column2` = 'item5,item4', `column1` = 'item1,item3,item2', `updated_at` = '2010-03-23 06:50:04' WHERE `id` = 1[0m
+  [4;35;1mSQL (63.0ms)[0m   [0mCOMMIT[0m
+
+ActionView::MissingTemplate (Missing template tasks/show.erb in view path app/views):
+  app/controllers/tasks_controller.rb:30:in `show'
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasksController#show (for 127.0.0.1 at 2010-03-23 12:20:06) [GET]
+  Parameters: {"id"=>"create", "SortOrder: column1"=>"item1,item3,item2", "_"=>"1269327006781", "column2"=>"item4,item5"}
+  [4;36;1mWidgetOrder Load (0.0ms)[0m   [0;1mSELECT * FROM `widget_orders` LIMIT 1[0m
+  [4;35;1mWidgetOrder Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `widget_orders`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mWidgetOrder Update (0.0ms)[0m   [0mUPDATE `widget_orders` SET `column2` = 'item4,item5', `updated_at` = '2010-03-23 06:50:06' WHERE `id` = 1[0m
+  [4;36;1mSQL (47.0ms)[0m   [0;1mCOMMIT[0m
+
+ActionView::MissingTemplate (Missing template tasks/show.erb in view path app/views):
+  app/controllers/tasks_controller.rb:30:in `show'
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasksController#show (for 127.0.0.1 at 2010-03-23 12:20:10) [GET]
+  Parameters: {"id"=>"create", "SortOrder: column1"=>"item1,item2,item3", "_"=>"1269327010359", "column2"=>"item4,item5"}
+  [4;35;1mWidgetOrder Load (0.0ms)[0m   [0mSELECT * FROM `widget_orders` LIMIT 1[0m
+  [4;36;1mWidgetOrder Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `widget_orders`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mWidgetOrder Update (0.0ms)[0m   [0;1mUPDATE `widget_orders` SET `column1` = 'item1,item2,item3', `updated_at` = '2010-03-23 06:50:10' WHERE `id` = 1[0m
+  [4;35;1mSQL (47.0ms)[0m   [0mCOMMIT[0m
+
+ActionView::MissingTemplate (Missing template tasks/show.erb in view path app/views):
+  app/controllers/tasks_controller.rb:30:in `show'
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-03-23 12:20:14) [GET]
+  [4;36;1mWidgetOrder Load (0.0ms)[0m   [0;1mSELECT * FROM `widget_orders` LIMIT 1[0m
+  [4;35;1mWidgetOrder Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `widget_orders`[0m
+Rendering tasks/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/tasks]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-23 15:06:16) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-03-23 15:06:18) [GET]
+  [4;36;1mWidgetOrder Load (0.0ms)[0m   [0;1mSELECT * FROM `widget_orders` LIMIT 1[0m
+  [4;35;1mWidgetOrder Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `widget_orders`[0m
+Rendering tasks/index
+Completed in 63ms (View: 47, DB: 0) | 200 OK [http://localhost/tasks]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasksController#show (for 127.0.0.1 at 2010-03-23 15:06:29) [GET]
+  Parameters: {"id"=>"create", "SortOrder: column1"=>"item1,item3", "_"=>"1269336989637", "column2"=>"item4,item2,item5"}
+  [4;36;1mWidgetOrder Load (0.0ms)[0m   [0;1mSELECT * FROM `widget_orders` LIMIT 1[0m
+  [4;35;1mWidgetOrder Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `widget_orders`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mWidgetOrder Update (0.0ms)[0m   [0mUPDATE `widget_orders` SET `column2` = 'item4,item2,item5', `column1` = 'item1,item3', `updated_at` = '2010-03-23 09:36:29' WHERE `id` = 1[0m
+  [4;36;1mSQL (63.0ms)[0m   [0;1mCOMMIT[0m
+
+ActionView::MissingTemplate (Missing template tasks/show.erb in view path app/views):
+  app/controllers/tasks_controller.rb:30:in `show'
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-03-23 15:06:31) [GET]
+  [4;35;1mWidgetOrder Load (0.0ms)[0m   [0mSELECT * FROM `widget_orders` LIMIT 1[0m
+  [4;36;1mWidgetOrder Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `widget_orders`[0m
+Rendering tasks/index
+Completed in 16ms (View: 0, DB: 16) | 200 OK [http://localhost/tasks]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasksController#show (for 127.0.0.1 at 2010-03-23 15:06:39) [GET]
+  Parameters: {"id"=>"create", "SortOrder: column1"=>"item1,item3,item4", "_"=>"1269336999120", "column2"=>"item2,item5"}
+  [4;35;1mWidgetOrder Load (0.0ms)[0m   [0mSELECT * FROM `widget_orders` LIMIT 1[0m
+  [4;36;1mWidgetOrder Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `widget_orders`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mWidgetOrder Update (0.0ms)[0m   [0;1mUPDATE `widget_orders` SET `column2` = 'item2,item5', `column1` = 'item1,item3,item4', `updated_at` = '2010-03-23 09:36:39' WHERE `id` = 1[0m
+  [4;35;1mSQL (94.0ms)[0m   [0mCOMMIT[0m
+
+ActionView::MissingTemplate (Missing template tasks/show.erb in view path app/views):
+  app/controllers/tasks_controller.rb:30:in `show'
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-03-23 15:06:40) [GET]
+  [4;36;1mWidgetOrder Load (0.0ms)[0m   [0;1mSELECT * FROM `widget_orders` LIMIT 1[0m
+  [4;35;1mWidgetOrder Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `widget_orders`[0m
+Rendering tasks/index
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/tasks]
+  [4;36;1mSQL (31.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (16.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-27 13:23:31) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-03-27 13:26:27) [GET]
+  [4;36;1mWidgetOrder Load (141.0ms)[0m   [0;1mSELECT * FROM `widget_orders` LIMIT 1[0m
+  [4;35;1mWidgetOrder Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `widget_orders`[0m
+Rendering tasks/index
+Completed in 250ms (View: 78, DB: 141) | 200 OK [http://localhost/tasks]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasksController#show (for 127.0.0.1 at 2010-03-27 13:26:30) [GET]
+  Parameters: {"id"=>"create", "SortOrder: column1"=>"item1,item4", "_"=>"1269676589991", "column2"=>"item2,item5,item3"}
+  [4;36;1mWidgetOrder Load (0.0ms)[0m   [0;1mSELECT * FROM `widget_orders` LIMIT 1[0m
+  [4;35;1mWidgetOrder Columns (15.0ms)[0m   [0mSHOW FIELDS FROM `widget_orders`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mWidgetOrder Update (31.0ms)[0m   [0mUPDATE `widget_orders` SET `column2` = 'item2,item5,item3', `column1` = 'item1,item4', `updated_at` = '2010-03-27 07:56:30' WHERE `id` = 1[0m
+  [4;36;1mSQL (31.0ms)[0m   [0;1mCOMMIT[0m
+
+ActionView::MissingTemplate (Missing template tasks/show.erb in view path app/views):
+  app/controllers/tasks_controller.rb:30:in `show'
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-03-27 15:28:38) [GET]
+  [4;35;1mWidgetOrder Load (0.0ms)[0m   [0mSELECT * FROM `widget_orders` LIMIT 1[0m
+  [4;36;1mWidgetOrder Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `widget_orders`[0m
+Rendering tasks/index
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/tasks]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasksController#show (for 127.0.0.1 at 2010-03-27 15:28:44) [GET]
+  Parameters: {"id"=>"create", "SortOrder: column1"=>"News,Articles", "_"=>"1269683924551", "column2"=>"General Info,Weather,videos"}
+  [4;35;1mWidgetOrder Load (0.0ms)[0m   [0mSELECT * FROM `widget_orders` LIMIT 1[0m
+  [4;36;1mWidgetOrder Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `widget_orders`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+
+ActionView::MissingTemplate (Missing template tasks/show.erb in view path app/views):
+  app/controllers/tasks_controller.rb:30:in `show'
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasksController#show (for 127.0.0.1 at 2010-03-27 15:28:45) [GET]
+  Parameters: {"id"=>"create", "SortOrder: column1"=>"News,Articles", "_"=>"1269683925888", "column2"=>"General Info,Weather,videos"}
+  [4;35;1mWidgetOrder Load (0.0ms)[0m   [0mSELECT * FROM `widget_orders` LIMIT 1[0m
+  [4;36;1mWidgetOrder Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `widget_orders`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+
+ActionView::MissingTemplate (Missing template tasks/show.erb in view path app/views):
+  app/controllers/tasks_controller.rb:30:in `show'
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasksController#show (for 127.0.0.1 at 2010-03-27 15:28:47) [GET]
+  Parameters: {"id"=>"create", "SortOrder: column1"=>"News,General Info,Articles", "_"=>"1269683927332", "column2"=>"Weather,videos"}
+  [4;35;1mWidgetOrder Load (0.0ms)[0m   [0mSELECT * FROM `widget_orders` LIMIT 1[0m
+  [4;36;1mWidgetOrder Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `widget_orders`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mWidgetOrder Update (0.0ms)[0m   [0;1mUPDATE `widget_orders` SET `column2` = 'Weather,videos', `column1` = 'News,General Info,Articles', `updated_at` = '2010-03-27 09:58:47' WHERE `id` = 1[0m
+  [4;35;1mSQL (46.0ms)[0m   [0mCOMMIT[0m
+
+ActionView::MissingTemplate (Missing template tasks/show.erb in view path app/views):
+  app/controllers/tasks_controller.rb:30:in `show'
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-27 15:30:21) [GET]
+  Parameters: {"SortOrder: column1"=>"General Info,Articles", "_"=>"1269684020858", "column2"=>"News,Weather,videos"}
+
+ActionController::RoutingError (No route matches "/tasks/create" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-27 15:30:23) [GET]
+  Parameters: {"SortOrder: column1"=>"General Info,Articles,Weather", "_"=>"1269684023287", "column2"=>"News,videos"}
+
+ActionController::RoutingError (No route matches "/tasks/create" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-27 15:30:53) [GET]
+
+ActionController::RoutingError (No route matches "/tasks" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-27 15:30:58) [GET]
+
+LoadError (Expected E:/Spritle/projects/ruby/draggable/app/controllers/home_controller.rb to define HomeController):
+  
+
+Rendered rescues/_trace (78.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-27 15:31:51) [GET]
+
+LoadError (Expected E:/Spritle/projects/ruby/draggable/app/controllers/home_controller.rb to define HomeController):
+  
+
+Rendered rescues/_trace (110.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-27 15:31:52) [GET]
+
+LoadError (Expected E:/Spritle/projects/ruby/draggable/app/controllers/home_controller.rb to define HomeController):
+  
+
+Rendered rescues/_trace (125.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-27 15:31:57) [GET]
+
+LoadError (Expected E:/Spritle/projects/ruby/draggable/app/controllers/home_controller.rb to define HomeController):
+  
+
+Rendered rescues/_trace (296.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+/!\ FAILSAFE /!\  Sat Mar 27 15:32:38 +0530 2010
+  Status: 500 Internal Server Error
+  Expected E:/Spritle/projects/ruby/draggable/app/helpers/home_helper.rb to define HomeHelper
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:426:in `load_missing_constant'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:80:in `const_missing'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:92:in `const_missing'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/inflector.rb:361:in `constantize'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/inflector.rb:360:in `each'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/inflector.rb:360:in `constantize'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/string/inflections.rb:162:in `constantize'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/helpers.rb:137:in `helper'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/helpers.rb:115:in `each'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/helpers.rb:115:in `helper'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/helpers.rb:120:in `helper'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/helpers.rb:115:in `each'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/helpers.rb:115:in `helper'
+    E:/Spritle/projects/ruby/draggable/app/controllers/application_controller.rb:5
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:380:in `load_without_new_constant_marking'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:380:in `load_file'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:379:in `load_file'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:259:in `require_or_load'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:425:in `load_missing_constant'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:80:in `const_missing'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:92:in `const_missing'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:89:in `dispatch'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:159:in `process_client'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `each'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `process_client'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `initialize'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `new'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `initialize'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `new'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `run'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+    E:/Spritle/programs/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    E:/Spritle/programs/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+/!\ FAILSAFE /!\  Sat Mar 27 15:32:45 +0530 2010
+  Status: 500 Internal Server Error
+  Expected E:/Spritle/projects/ruby/draggable/app/helpers/home_helper.rb to define HomeHelper
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:426:in `load_missing_constant'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:80:in `const_missing'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:92:in `const_missing'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/inflector.rb:361:in `constantize'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/inflector.rb:360:in `each'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/inflector.rb:360:in `constantize'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/string/inflections.rb:162:in `constantize'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/helpers.rb:137:in `helper'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/helpers.rb:115:in `each'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/helpers.rb:115:in `helper'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/helpers.rb:120:in `helper'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/helpers.rb:115:in `each'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/helpers.rb:115:in `helper'
+    E:/Spritle/projects/ruby/draggable/app/controllers/application_controller.rb:5
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:380:in `load_without_new_constant_marking'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:380:in `load_file'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:379:in `load_file'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:259:in `require_or_load'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:425:in `load_missing_constant'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:80:in `const_missing'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:92:in `const_missing'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:89:in `dispatch'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:159:in `process_client'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `each'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `process_client'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `initialize'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `new'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `initialize'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `new'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `run'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+    E:/Spritle/programs/ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+    E:/Spritle/programs/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    E:/Spritle/programs/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-27 15:33:04) [GET]
+
+LoadError (Expected E:/Spritle/projects/ruby/draggable/app/controllers/home_controller.rb to define HomeController):
+  
+
+Rendered rescues/_trace (110.0ms)
+Rendered rescues/_request_and_response (15.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-27 15:33:09) [GET]
+
+LoadError (Expected E:/Spritle/projects/ruby/draggable/app/controllers/home_controller.rb to define HomeController):
+  
+
+Rendered rescues/_trace (109.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-27 15:34:14) [GET]
+  [4;36;1mWidgetOrder Load (0.0ms)[0m   [0;1mSELECT * FROM `widget_orders` LIMIT 1[0m
+  [4;35;1mWidgetOrder Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `widget_orders`[0m
+Rendering home/index
+Completed in 63ms (View: 32, DB: 0) | 200 OK [http://localhost/home/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-27 15:35:42) [GET]
+  Parameters: {"SortOrder: column1"=>"News,Weather,General Info,Articles", "_"=>"1269684342674", "column2"=>"videos"}
+
+ActionController::RoutingError (No route matches "/tasks/create" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-27 15:35:44) [GET]
+  Parameters: {"SortOrder: column1"=>"News,Weather,Articles", "_"=>"1269684344250", "column2"=>"videos,General Info"}
+
+ActionController::RoutingError (No route matches "/tasks/create" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-27 15:35:45) [GET]
+  [4;36;1mWidgetOrder Load (0.0ms)[0m   [0;1mSELECT * FROM `widget_orders` LIMIT 1[0m
+  [4;35;1mWidgetOrder Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `widget_orders`[0m
+Rendering home/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/home/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-27 15:35:55) [GET]
+  Parameters: {"SortOrder: column1"=>"News,Articles", "_"=>"1269684355826", "column2"=>"Weather,General Info,videos"}
+
+ActionController::RoutingError (No route matches "/tasks/create" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-27 15:36:25) [GET]
+  Parameters: {"SortOrder: column1"=>"News", "_"=>"1269684385757", "column2"=>"Weather,Articles,General Info,videos"}
+
+ActionController::RoutingError (No route matches "/tasks/create" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-27 15:38:59) [GET]
+  [4;36;1mWidgetOrder Load (0.0ms)[0m   [0;1mSELECT * FROM `widget_orders` LIMIT 1[0m
+  [4;35;1mWidgetOrder Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `widget_orders`[0m
+Rendering home/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/home/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-27 15:39:02) [GET]
+  Parameters: {"SortOrder: column1"=>"News,Articles", "_"=>"1269684542886", "column2"=>"Weather,videos,General Info"}
+
+ActionController::RoutingError (No route matches "/tasks/create" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-27 15:39:41) [GET]
+  [4;36;1mWidgetOrder Load (0.0ms)[0m   [0;1mSELECT * FROM `widget_orders` LIMIT 1[0m
+  [4;35;1mWidgetOrder Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `widget_orders`[0m
+Rendering home/index
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/home/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#save_widgets_state (for 127.0.0.1 at 2010-03-27 15:39:44) [GET]
+  Parameters: {"SortOrder: column1"=>"News,Articles", "_"=>"1269684584017", "column2"=>"Weather,videos,General Info"}
+  [4;36;1mWidgetOrder Load (16.0ms)[0m   [0;1mSELECT * FROM `widget_orders` LIMIT 1[0m
+  [4;35;1mWidgetOrder Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `widget_orders`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mWidgetOrder Update (0.0ms)[0m   [0mUPDATE `widget_orders` SET `column2` = 'Weather,videos,General Info', `column1` = 'News,Articles', `updated_at` = '2010-03-27 10:09:44' WHERE `id` = 1[0m
+  [4;36;1mSQL (110.0ms)[0m   [0;1mCOMMIT[0m
+
+ActionView::MissingTemplate (Missing template home/save_widgets_state.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-27 15:39:46) [GET]
+  [4;35;1mWidgetOrder Load (0.0ms)[0m   [0mSELECT * FROM `widget_orders` LIMIT 1[0m
+  [4;36;1mWidgetOrder Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `widget_orders`[0m
+Rendering home/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/home/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateWidgetOrders (20100323062316)
+Migrating to AddInitialWidgetsToWidgetsOrder (20100327101133)
+  [4;36;1mWidgetOrder Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `widget_orders`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mWidgetOrder Create (0.0ms)[0m   [0;1mINSERT INTO `widget_orders` (`updated_at`, `column1`, `column2`, `created_at`) VALUES('2010-03-27 10:13:18', 'News,Articles', 'General Info,Weather,videos', '2010-03-27 10:13:18')[0m
+  [4;35;1mSQL (31.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (32.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100327101133')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (16.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW FIELDS FROM `tasks`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mdescribe `tasks`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `tasks`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW FIELDS FROM `widget_orders`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mdescribe `widget_orders`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `widget_orders`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-27 15:43:31) [GET]
+  [4;35;1mWidgetOrder Load (0.0ms)[0m   [0mSELECT * FROM `widget_orders` LIMIT 1[0m
+  [4;36;1mWidgetOrder Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `widget_orders`[0m
+Rendering home/index
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/home/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#save_widgets_state (for 127.0.0.1 at 2010-03-27 15:43:34) [GET]
+  Parameters: {"SortOrder: column1"=>"News,General Info,Articles", "_"=>"1269684814045", "column2"=>"Weather,videos"}
+  [4;35;1mWidgetOrder Load (0.0ms)[0m   [0mSELECT * FROM `widget_orders` LIMIT 1[0m
+  [4;36;1mWidgetOrder Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `widget_orders`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mWidgetOrder Update (0.0ms)[0m   [0;1mUPDATE `widget_orders` SET `column2` = 'Weather,videos', `column1` = 'News,General Info,Articles', `updated_at` = '2010-03-27 10:13:34' WHERE `id` = 2[0m
+  [4;35;1mSQL (94.0ms)[0m   [0mCOMMIT[0m
+
+ActionView::MissingTemplate (Missing template home/save_widgets_state.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#save_widgets_state (for 127.0.0.1 at 2010-03-27 15:46:41) [GET]
+  Parameters: {"SortOrder: column1"=>"News,Articles", "_"=>"1269685001272", "column2"=>"Weather,General Info,videos"}
+  [4;36;1mWidgetOrder Load (0.0ms)[0m   [0;1mSELECT * FROM `widget_orders` LIMIT 1[0m
+  [4;35;1mWidgetOrder Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `widget_orders`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mWidgetOrder Update (0.0ms)[0m   [0mUPDATE `widget_orders` SET `column2` = 'Weather,General Info,videos', `column1` = 'News,Articles', `updated_at` = '2010-03-27 10:16:41' WHERE `id` = 2[0m
+  [4;36;1mSQL (47.0ms)[0m   [0;1mCOMMIT[0m
+
+ActionView::MissingTemplate (Missing template home/save_widgets_state.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#save_widgets_state (for 127.0.0.1 at 2010-03-27 15:46:49) [GET]
+  Parameters: {"SortOrder: column1"=>"News,General Info,Articles", "_"=>"1269685009744", "column2"=>"Weather,videos"}
+  [4;35;1mWidgetOrder Load (0.0ms)[0m   [0mSELECT * FROM `widget_orders` LIMIT 1[0m
+  [4;36;1mWidgetOrder Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `widget_orders`[0m
+  [4;35;1mSQL (16.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mWidgetOrder Update (0.0ms)[0m   [0;1mUPDATE `widget_orders` SET `column2` = 'Weather,videos', `column1` = 'News,General Info,Articles', `updated_at` = '2010-03-27 10:16:49' WHERE `id` = 2[0m
+  [4;35;1mSQL (63.0ms)[0m   [0mCOMMIT[0m
+
+ActionView::MissingTemplate (Missing template home/save_widgets_state.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#save_widgets_state (for 127.0.0.1 at 2010-03-27 15:48:07) [GET]
+  Parameters: {"SortOrder: column1"=>"News,Articles", "_"=>"1269685087891", "column2"=>"Weather,General Info,videos"}
+  [4;36;1mWidgetOrder Load (0.0ms)[0m   [0;1mSELECT * FROM `widget_orders` LIMIT 1[0m
+  [4;35;1mWidgetOrder Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `widget_orders`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mWidgetOrder Update (0.0ms)[0m   [0mUPDATE `widget_orders` SET `column2` = 'Weather,General Info,videos', `column1` = 'News,Articles', `updated_at` = '2010-03-27 10:18:07' WHERE `id` = 2[0m
+  [4;36;1mSQL (62.0ms)[0m   [0;1mCOMMIT[0m
+
+ActionView::MissingTemplate (Missing template home/nothing.erb in view path app/views):
+  app/controllers/home_controller.rb:19:in `save_widgets_state'
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-27 15:48:51) [GET]
+  [4;35;1mWidgetOrder Load (0.0ms)[0m   [0mSELECT * FROM `widget_orders` ORDER BY widget_orders.id DESC LIMIT 1[0m
+  [4;36;1mWidgetOrder Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `widget_orders`[0m
+Rendering home/index
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://localhost/home/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#save_widgets_state (for 127.0.0.1 at 2010-03-27 15:48:54) [GET]
+  Parameters: {"SortOrder: column1"=>"News,General Info,Articles", "_"=>"1269685134790", "column2"=>"Weather,videos"}
+  [4;35;1mWidgetOrder Load (0.0ms)[0m   [0mSELECT * FROM `widget_orders` LIMIT 1[0m
+  [4;36;1mWidgetOrder Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `widget_orders`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mWidgetOrder Update (16.0ms)[0m   [0;1mUPDATE `widget_orders` SET `column2` = 'Weather,videos', `column1` = 'News,General Info,Articles', `updated_at` = '2010-03-27 10:18:54' WHERE `id` = 2[0m
+  [4;35;1mSQL (47.0ms)[0m   [0mCOMMIT[0m
+
+ActionView::MissingTemplate (Missing template home/save_widgets_state.erb in view path app/views):
+  app/controllers/home_controller.rb:19:in `save_widgets_state'
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#save_widgets_state (for 127.0.0.1 at 2010-03-27 15:49:16) [GET]
+  Parameters: {"SortOrder: column1"=>"News,Articles", "_"=>"1269685156853", "column2"=>"Weather,General Info,videos"}
+  [4;36;1mWidgetOrder Load (0.0ms)[0m   [0;1mSELECT * FROM `widget_orders` LIMIT 1[0m
+  [4;35;1mWidgetOrder Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `widget_orders`[0m
+  [4;36;1mSQL (15.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mWidgetOrder Update (15.0ms)[0m   [0mUPDATE `widget_orders` SET `column2` = 'Weather,General Info,videos', `column1` = 'News,Articles', `updated_at` = '2010-03-27 10:19:17' WHERE `id` = 2[0m
+  [4;36;1mSQL (31.0ms)[0m   [0;1mCOMMIT[0m
+
+ActionView::MissingTemplate (Missing template home/save_widgets_state.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-27 15:49:37) [GET]
+
+NoMethodError (undefined method `layout' for #<HomeController:0x498719c>):
+  app/controllers/home_controller.rb:3:in `index'
+
+Rendered rescues/_trace (203.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-27 15:50:14) [GET]
+  [4;35;1mWidgetOrder Load (0.0ms)[0m   [0mSELECT * FROM `widget_orders` ORDER BY widget_orders.id DESC LIMIT 1[0m
+  [4;36;1mWidgetOrder Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `widget_orders`[0m
+Rendering home/index
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/home/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#save_widgets_state (for 127.0.0.1 at 2010-03-27 15:50:17) [GET]
+  Parameters: {"SortOrder: column1"=>"News,Articles,General Info", "_"=>"1269685217140", "column2"=>"Weather,videos"}
+  [4;35;1mWidgetOrder Load (0.0ms)[0m   [0mSELECT * FROM `widget_orders` LIMIT 1[0m
+  [4;36;1mWidgetOrder Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `widget_orders`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mWidgetOrder Update (0.0ms)[0m   [0;1mUPDATE `widget_orders` SET `column2` = 'Weather,videos', `column1` = 'News,Articles,General Info', `updated_at` = '2010-03-27 10:20:17' WHERE `id` = 2[0m
+  [4;35;1mSQL (78.0ms)[0m   [0mCOMMIT[0m
+Completed in 94ms (View: 0, DB: 78) | 200 OK [http://localhost/home/save_widgets_state?_=1269685217140&SortOrder:%20column1=News,Articles,General%20Info&column2=Weather,videos&]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-27 16:05:11) [GET]
+  [4;36;1mWidgetOrder Load (0.0ms)[0m   [0;1mSELECT * FROM `widget_orders` ORDER BY widget_orders.id DESC LIMIT 1[0m
+  [4;35;1mWidgetOrder Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `widget_orders`[0m
+Rendering home/index
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/home/]

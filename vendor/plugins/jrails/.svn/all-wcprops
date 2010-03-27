@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/spritle/dunnitt/!svn/ver/22/trunk/vendor/plugins/jrails
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/spritle/dunnitt/!svn/ver/22/trunk/vendor/plugins/jrails/LICENSE
+END
+Rakefile
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/spritle/dunnitt/!svn/ver/22/trunk/vendor/plugins/jrails/Rakefile
+END
+README.rdoc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/spritle/dunnitt/!svn/ver/22/trunk/vendor/plugins/jrails/README.rdoc
+END
+VERSION.yml
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/spritle/dunnitt/!svn/ver/22/trunk/vendor/plugins/jrails/VERSION.yml
+END
+init.rb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/spritle/dunnitt/!svn/ver/22/trunk/vendor/plugins/jrails/init.rb
+END
+jrails.gemspec
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/spritle/dunnitt/!svn/ver/22/trunk/vendor/plugins/jrails/jrails.gemspec
+END
+CHANGELOG
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/spritle/dunnitt/!svn/ver/22/trunk/vendor/plugins/jrails/CHANGELOG
+END
+install.rb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/spritle/dunnitt/!svn/ver/22/trunk/vendor/plugins/jrails/install.rb
+END
